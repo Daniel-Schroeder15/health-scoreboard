@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Health Scoreboard</title>
+
+<style>
+  body {
+    margin: 0;
+    background: #000;
+    color: #00ff99;
+    font-family: 'Arial Black', sans-serif;
+  }
+
+  .board {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+    padding: 24px;
+  }
+
+  .header {
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+  }
+
+  .score {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .score div {
+    text-align: center;
+  }
+
+  .big {
+    font-size: 96px;
+  }
+
+  .stats {
+    margin-top: 20px;
+    font-size: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+</style>
+</head>
+
+<body>
+  <div class="board">
+    <div class="header">DANDAN HEALTH LEAGUE · WK 2</div>
+
+    <div class="score">
+      <div>
+        <div>YOU</div>
+        <div class="big">78</div>
+      </div>
+      <div>
+        <div>GOAL</div>
+        <div class="big">85</div>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div>STEPS: 9,842</div>
+      <div>SLEEP: 82%</div>
+      <div>WORKOUTS: 4</div>
+      <div>HRV: 61</div>
+    </div>
+  </div>
+</body>
+</html>
